@@ -1,0 +1,118 @@
+/**/
+html {
+    background-color: black;
+}
+main {
+    background-color: rgb(65, 65, 65);
+}
+
+h1 {
+    font-family: "Bitcount Grid Double";
+    font-size: 50px !important;
+}
+
+hr {
+    height: 3px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+}
+#userInput:hover{
+    box-shadow: 0 0 5px 5px cyan;
+    transition: 0.4s;
+}
+.userDiv{
+    width: 300px;
+    height: auto;
+    border-radius: 25px;
+    border: solid;
+    border-color: aqua;
+    border-width: 1px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    z-index: 1;
+    color: white;
+}
+.userDiv:hover {
+    box-shadow: 0 0 20px 20px rgba(218, 218, 218, 0.2);
+    transition: 0.4s;
+    transform: translate(0,-5px);
+    z-index:0;
+}
+.imgDiv {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.userImg {
+    border-radius: 50%;
+    width: 100%;
+}
+.username {
+    color: rgb(194, 194, 194);
+    font-size: 26px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.911),rgb(0, 41, 41));
+    padding-bottom: 400px;
+}
+footer p {
+    margin-bottom: 0px !important;
+}
+footer hr{
+    display:none
+}
+footer .footerBrand {
+    font-size: 35px;
+    margin-left: 5rem;
+}
+footer .footerSubTitle {
+    font-size: 25px;
+    text-align: center;
+}
+footer .footerPortfolio {
+  animation: blink 2s infinite;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+footer .footerPortfolio:hover {
+    cursor: pointer;
+    transform: translate(0,-3px);
+    font-size: 26px;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+footer .footerSecondCol {
+    border-left: solid;
+    border-width: 1px;
+}
+footer .footerIcon {
+    font-size: 40px;
+}
+footer .footerIcon:hover {
+    animation: blink 2s infinite;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+@keyframes blink {
+  60%, 100% { opacity: 1; }
+  50%      { color: rgb(0, 154, 154); }
+}
+
+@media (max-width:768px){
+    footer hr {
+        display: block
+    }
+    footer .footerSecondCol {
+        border-left: none;
+    }
+}
